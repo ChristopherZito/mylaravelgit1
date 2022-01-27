@@ -7,8 +7,8 @@ use Faker\Generator as Faker;
 
 $factory->define(Leader::class, function (Faker $faker) {
     return [
-        'name'=> $faker -> firstName(),
-        'surname'=> $faker -> lastName(),
-        'F.C.'=> $faker -> text(10),
+        'nome'=> $faker -> firstName(),
+        'cognome'=> $faker -> lastName(),
+        'fc'=> $faker -> word(),
     ];
 });
