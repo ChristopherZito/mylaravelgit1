@@ -11,4 +11,9 @@ class Employee extends Model
         'cognome',
         'fc',
     ];
+
+    public function email()
+    {
+        return $this-> nome. '.' . $this->cognome . '@gmail.com' ;;
+    }
 }
